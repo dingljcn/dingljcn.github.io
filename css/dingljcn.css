@@ -1,0 +1,122 @@
+:root {
+    --default-top: rgba(0, 0, 0, 0);
+    --dinglj-color: #4968f5;
+    --btn-hover-color: rgba(0, 0, 0, 0.3);
+    --btn-bg: var(--dinglj-color);
+    --scrollbar-color: var(--dinglj-color);
+    --default-bg-color: var(--dinglj-color);
+    --preloader-bg: rgba(0, 0, 0, 0.6);
+}
+
+/* 去掉顶部大图的遮罩 */
+#dingljcn #page-header:not(.not-top-img):before {
+    background: none;
+}
+
+/* 导航栏毛玻璃 */
+#dingljcn #footer,
+#dingljcn #nav.show {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    font-weight: bold;
+}
+
+/* 图片放大后的背景毛玻璃 */
+#dingljcn .fancybox__container {
+    --fancybox-bg: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* 图片放大后的按钮无背景色 */
+#dingljcn .fancybox__container .f-button {
+    color: white;
+    background: none;
+}
+
+/* 图片放大后的圆角 */
+#dingljcn .fancybox-image {
+    border-radius: 10px;
+}
+
+/* 图片放大后的名称 */
+#dingljcn .fancybox__caption {
+    color: white;
+    font-weight: bold;
+}
+
+/* 右下角小按钮不透明 */
+#dingljcn #rightside.rightside-show {
+    opacity: 1;
+}
+
+/* 右下角小按钮毛玻璃 */
+#dingljcn #rightside>div>button,
+#dingljcn #rightside>div>a {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* 目录进度颜色改为蓝色 */
+#dingljcn #aside-content #card-toc .toc-percentage {
+    color: var(--default-bg-color);
+}
+
+/* 目录进度颜色改为蓝色 */
+#dingljcn #aside-content #card-toc .toc-content .toc-link.active {
+    background: var(--default-bg-color);
+}
+
+/* 首页文章、所有侧边卡片毛玻璃 */
+#dingljcn #content-inner .recent-post-item,
+#dingljcn #aside-content .card-widget,
+#dingljcn #page,
+#dingljcn #post {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px);
+}
+
+/* 首页分页标识 */
+#dingljcn #pagination .page-number.current {
+    background: var(--default-bg-color);
+    font-weight: bold
+}
+
+/* 不要摇晃 */
+#dingljcn .fa-shake {
+    -webkit-animation-name: none;
+    animation-name: none;
+}
+
+/* 边栏的分割线 */
+#dingljcn #aside-content .aside-list>.aside-list-item:not(:last-child) {
+    border-bottom: 1px dashed var(--font-color);
+}
+
+/* 网站图标圆角 */
+#dingljcn .site-icon {
+    border-radius: 50%;
+}
+
+/* 导航栏字体颜色 */
+#dingljcn #page-header.nav-fixed #nav a,
+#dingljcn #page-header.nav-fixed #nav #toggle-menu {
+    color: white;
+}
+
+/* 个人信息边栏中的按钮圆角 */
+#dingljcn #card-info-btn {
+    border-radius: 5px;
+}
+
+/* 导航栏不要有阴影效果 */
+#dingljcn #page-header.nav-fixed #nav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* 首页封面加点透明度 */
+#dingljcn .recent-posts .post_cover .post-bg {
+    opacity: 0.7;
+}
+
+/* loading 动画毛玻璃: loading.styl:8, backdrop-filter: blur(10px) */
