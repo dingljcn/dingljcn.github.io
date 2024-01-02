@@ -8,6 +8,22 @@
     --preloader-bg: rgba(0, 0, 0, 0.6);
 }
 
+canvas:not(#ribbon-canvas),
+#web_bg {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+#ribbon-canvas {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+    animation: none;
+}
+
 /* 去掉顶部大图的遮罩 */
 #dingljcn #page-header:not(.not-top-img):before {
     background: none;
@@ -70,8 +86,18 @@
 #dingljcn #content-inner .recent-post-item,
 #dingljcn #aside-content .card-widget,
 #dingljcn #page,
-#dingljcn #post {
+#dingljcn #post,
+#dingljcn #archive{
     background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px);
+}
+
+#dingljcn #content-inner .recent-post-item:hover,
+#dingljcn #aside-content .card-widget:hover,
+#dingljcn #page:hover,
+#dingljcn #post:hover,
+#dingljcn #archive:hover{
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
 }
 
